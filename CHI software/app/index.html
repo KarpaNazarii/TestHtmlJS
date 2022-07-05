@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">     
+                Current Loans
+            </div>
+        </div>
+    </header>
+    <div class="general">
+        <div class="container">
+            <div class="general__content">
+                <div class="general__item">
+                    <div class="general__item-content">
+                        <div class="general__info">
+                            <div class="general__item-header">
+                                Loan name 1
+                            </div>
+                            <div class="general__item-text"> 
+                                Loan details and values
+                            </div>
+                        </div>
+                        <div class="general__item-btn">
+                            <div class="passed-btn" id="first-pass">
+                                Invested
+                            </div>
+                            <button type="button" id="btn_modal_window-first" class="invest-btn btn" onclick="popUp()">
+                                invest
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="general__item">
+                    <div class="general__item-content">
+                        <div class="general__info">
+                            <div class="general__item-header">
+                                Loan name 1
+                            </div>
+                            <div class="general__item-text"> 
+                                Loan details and values
+                            </div>
+                        </div>
+                        <div class="general__item-btn">
+                            <div class="passed-btn second-pass">
+                                Invested
+                            </div>
+                            <button type="button"  id="btn_modal_window-second" class="invest-btn btn">
+                                invest
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="general__item">
+                    <div class="general__item-content">
+                        <div class="general__info">
+                            <div class="general__item-header">
+                                Loan name 1
+                            </div>
+                            <div class="general__item-text"> 
+                                Loan details and values
+                            </div>
+                        </div>
+                        <div class="general__item-btn">
+                            <div class="passed-btn third-pass">
+                                Invested
+                            </div>
+                            <button type="button"  id="btn_modal_window-third" class="invest-btn btn">
+                                invest
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__text">
+                    Total amount available for investment:
+                </div>
+                <div class ="footer__summ">
+                    <span class="footer__currencyinput">$<input type="number" id="total-sum" placeholder="1000.0" name="currency" class="footer__input"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal" id="mymodal">
+        <div class="modal__content"> 
+            <span class="close_modal_window">&times;</span>
+            <div class="modal__info">
+                <div class="modal__settings">
+                    <div class="modal__header">
+                        Invest in Loan
+                    </div>
+                    <div class="modal__title">
+                        Loan title you’ve clicked
+                    </div>
+                    <div class="modal__available">
+                        Amount available: $12,362
+                    </div>
+                    <div class="modal__date">
+                        Loan ends in: 1 month 10 days
+                    </div>
+                </div>
+                <div class="modal__invest">
+                    <div class="modal__name">
+                        Investment amount
+                    </div>
+                    <div class="modal__pay"> 
+                        <div class="modal__summ">
+                            <input placeholder="1000" id="sum-to-invest" type="text">
+                        </div>
+                        <button type="button" class="invest-btn btn" id="pay_btn" >
+                            invest
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <script src="js/main.min.js"></script>
+</body>
+</html>

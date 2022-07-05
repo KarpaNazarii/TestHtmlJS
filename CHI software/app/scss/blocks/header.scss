@@ -1,0 +1,16 @@
+.header {
+    border: none;
+    border-bottom: 1px solid $light-dark;  
+    // .header__content
+    &__content {
+        margin-top: 32px ;
+        margin-left: 64px;
+        margin-right: auto;
+        margin-bottom: 32px;
+        
+        font-size: 30px;
+        font-weight: 600;
+
+        text-align: left;
+    }
+}

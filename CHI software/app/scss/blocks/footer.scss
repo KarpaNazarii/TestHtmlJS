@@ -1,0 +1,44 @@
+.footer {
+    // .footer__content
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        max-width: 683px;
+
+        margin-left: 64px;
+        margin-top: 64px;
+    }
+    // .footer__text
+    &__text {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+
+        text-align: left;
+    }
+    // .footer__summ
+    &__summ {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+
+        text-align: right;
+
+    }
+    // .footer__currencyinput
+    &__currencyinput {
+    }
+    // .footer__input
+    &__input {
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: right;
+        width: 100px;
+    }
+}

@@ -1,0 +1,33 @@
+@import "./vars/vars.scss";
+
+/*Blocks*/
+@import "./container/container.scss";
+@import "./blocks/header.scss";
+@import "./blocks/general.scss";
+@import "./blocks/footer.scss";
+
+/*Buttons*/
+@import "./buttons/buttons.scss";
+
+/*Modal*/
+@import "./modal/modal.scss";
+
+body{
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    color: $dark;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
